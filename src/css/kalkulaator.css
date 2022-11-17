@@ -1,1 +1,7 @@
- 
+.bar-graph {
+    overflow: hidden;
+} 
+
+.bar-graph .bar {
+    float: left;
+}

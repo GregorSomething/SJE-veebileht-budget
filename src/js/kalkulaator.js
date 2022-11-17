@@ -20,6 +20,14 @@ window.onload = function () {
     }
 
     const render = () => {
+        var graphRoot = document.getElementById("user-graph");
+        Array.from(graphRoot.getElementsByTagName("div")).forEach(element => {
+            if (element.classList.contains("bar")) {
+                elData = element.id.split(" ")
+                // Nii on minu meelsest ainus võimalus, lisaks see pole HTML failis hetkel seega see pole halb komme.
+                element.innerHTML = `<div style=\"background-color: ${elData[1]}; padding: ${data.in[elData[0]] * 10}px 20px\"></div>`
+            }
+        });
         console.log(data)
     }
 }  
