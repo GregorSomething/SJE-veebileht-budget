@@ -1,4 +1,5 @@
 // Autor: Gregor, kogu fail, va millel on muu viitamine.
+// Märkus, ma vahel panen rea lõppu semikooloni, vahel mitte.
 
 window.onload = function () {
     let data = {
@@ -21,13 +22,18 @@ window.onload = function () {
 
     const render = () => {
         var graphRoot = document.getElementById("user-graph");
+        const max = 100;
         Array.from(graphRoot.getElementsByTagName("div")).forEach(element => {
             if (element.classList.contains("bar")) {
-                elData = element.id.split(" ")
+                elData = element.id.split(" ");
+                h = data.in[elData[0]] * 10;
+                m = max - h;
                 // Nii on minu meelsest ainus võimalus, lisaks see pole HTML failis hetkel seega see pole halb komme.
-                element.innerHTML = `<div style=\"background-color: ${elData[1]}; padding: ${data.in[elData[0]] * 10}px 20px\"></div>`
+                element.innerHTML = `<div style=\"padding: ${m}px 20px\"></div>` +
+                                    `<div style=\"border-radius: 10px; background-color: ${elData[1]}; padding: ${h}px 20px\"></div>`;
             }
         });
         console.log(data)
     }
+    render()
 }  
