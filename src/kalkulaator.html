@@ -29,9 +29,39 @@
   </p>
   <div class="content">
     <!-- Kogu lehe sisu peaks olema selles div-is teoreetiliset. -->
-    
+    <p>
+      See kalkulaator aitab sul visualiseerida oma kulutusi. Kasutamiseks sisestage küsitud väljad
+      ja kalkulaator väljastab joonise selle kohta, numbereid pole sest eelduste tegemine pole kuigi täpne.
+      <br><b>NB!</b> Kalkulaatori eeldused ei tohiks mõjutada eriti sinu edasisi kulutusi. 
+      Eelkõige tuleks prioritiseerida olulised kulud, milleta elada ei saaks.
+      <br><br> Kalkulaatori kasutamine telefonis ei pruugi ilus välja näha.
+    </p>
+    <form class="user-input" id="user-input">
+      <label for="in-bal">Sissetulek kuus</label>
+      <input type="number" id="in-bal" value="0">
+      <br>
+      <label for="in-exp-food">Väljaminek toidule kuus</label>
+      <input type="number" id="in-exp-food" value="0">
+      <br>
+      <label for="in-exp-needs">Väljaminek elamisele kuus</label>
+      <input type="number" id="in-exp-needs" value="0">
+      <br>
+      <label for="in-exp-want">Väljaminek soovkuludele kuus</label>
+      <input type="number" id="in-exp-want" value="0">
+    </form>
+    <div class="bar-graph" id="user-graph">
+      <div class="bar" id="in-bal green Sissetulek"></div>
+      <div class="bar" id="in-exp-food #FFF380 Väljaminek_toit"></div>
+      <div class="bar" id="out-exp-food #FFFFC2 Väljaminek_toit_eeldus"></div>
+      <div class="bar" id="in-exp-needs #CD5C5C Väljaminek_eluks"></div>
+      <div class="bar" id="out-exp-needs #A45A52 Väljaminek_eluks_eeldus"></div>
+      <div class="bar" id="in-exp-want #FA8128 Väljaminek_soovid"></div>
+      <div class="bar" id="out-exp-want #FCAE1E Väljaminek_soovid_eeldus"></div>
+      <div class="bar" id="in-save #0197F6 Kogumine"></div>
+      <div class="bar" id="out-save #89CFF0 Kogumine_eeldus"></div>
+    </div>
+    <div class="legend" id="legend"></div>
   </div>
-
 </body>
 
 </html>
