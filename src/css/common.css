@@ -1,14 +1,14 @@
 .header {
   overflow: hidden;
-  background-color: #e4f8d9;
+  background-color: #ffffff;
   padding: 15px 12% 5px 12%; 
 }
 
 .header-slogan {
   padding: 3px 12% 3px 12%;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #bbf39f;
-  font-size: 18px;
+  background-color: #9ec58a;
+  font-size: 20px;
   margin: 0px;
 }
 
@@ -16,11 +16,11 @@
 .header a {
   font-family: Arial, Helvetica, sans-serif;
   float: left;
-  color: rgb(11, 36, 0);
+  color: rgb(0, 0, 0);
   text-align: center;
   padding: 12px;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 25px;
   border-radius: 24px;
   margin-right: 6px;
@@ -34,14 +34,14 @@
 
 /* Hover effekt nupule-link */
 .header a:hover {
-  background-color: rgb(194, 238, 158);
+  background-color: #77a574;
   color: black;
 }
 
 /* Kui link on klassiga active */
 .header a.active {
-  background-color: rgb(19, 194, 48);
-  color: rgb(0, 0, 0);
+  background-color: #4b8c56;
+  color: rgb(255, 255, 255);
 }
 
 /* Joondab asjad paremale */

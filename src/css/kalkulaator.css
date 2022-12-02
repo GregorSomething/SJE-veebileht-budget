@@ -1,7 +1,7 @@
 .bar-graph {
     overflow: hidden;
-    background-color: #D3D3D3;
-    border: solid 3px green;
+    background-color: #dfdfdf;
+    border: solid 3px#4b8c56;
     border-radius: 15px;
     padding: 15px;
 } 
@@ -13,7 +13,7 @@
 }
 
 .user-input {
-    background-color: #e4f8d9;
+    background-color: #dfdfdf;
     border-radius: 10px;
     margin: 5px;
     padding: 10px;
@@ -22,7 +22,7 @@
 }
 
 .user-input label {
-    background-color: rgb(194, 238, 158);
+  background-color: #9ec58a;
     padding: 3px;
     margin: 5px 0px 5px 5px;
     border-radius: 5px 0px 0px 5px;
