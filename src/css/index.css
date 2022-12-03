@@ -1,11 +1,15 @@
- .p {
-    font-family:Arial, Helvetica, sans-serif;
-    font-size: 18px;
-    color:  rgb(0, 0, 0); 
-    text-align: left;
- }
- img{
-    border: 8px solid #4b8c56;
-    float: right;
-  }
+ul {
+   font-family:Arial, Helvetica, sans-serif;
+   font-size: 16px;
+   color:  rgb(0, 0, 0); 
+   text-align: left;
+}
 
+img {
+    border: 6px solid #4b8c56;
+    float: right;
+}
+
+.column {
+   float: left;
+}
