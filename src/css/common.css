@@ -35,6 +35,7 @@
 /* Hover effekt nupule-link */
 .header a:hover {
   background-color: #77a574;
+  transition: background-color .33s ease;
   color: black;
 }
 
