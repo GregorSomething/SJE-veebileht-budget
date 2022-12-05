@@ -19,3 +19,7 @@ img {
 .image {
    flex-basis:40%;
 }
+
+strong {
+   color: #77a574;
+}

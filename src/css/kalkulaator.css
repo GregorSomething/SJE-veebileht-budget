@@ -39,3 +39,7 @@ p {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
 } 
+
+strong {
+    color: #77a574;
+ }
